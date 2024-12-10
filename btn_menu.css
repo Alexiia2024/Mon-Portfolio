@@ -1,0 +1,104 @@
+/* Header */
+
+header{
+    background-color: var(--c-blue);
+    position:fixed;
+    width:100%;
+    z-index: 10;
+    
+}
+
+.logo{
+    width: 100px;
+    position: fixed;
+}
+
+nav ul li a{
+    color: var(--c-black);
+    font-weight: bold;
+    text-decoration:none;
+ }
+  
+ nav ul li a:hover{
+    color:var(--c-white);
+ }
+ 
+
+/***** MENU ******/
+
+#menu {
+    
+    height: 10vh;
+}
+
+#menu ul {
+    width:100%;
+    gap:40px;
+}
+
+
+/* Bouton "burger" */
+#menu button {
+    width:50px;
+    flex-shrink:0;
+    background-color:transparent;
+    border:none;
+    display:none;
+    transition:margin-top 0.5s;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:1000px) {
+
+    /* .logo{
+        width: 100px;
+        position: fixed;
+        display: flex;
+        align-items: flex-start; 
+    } */
+
+    header{
+        height: auto;
+    }
+     
+    /* .logo{
+        width: 100px;
+        position: fixed;
+     } */
+
+
+    nav a{
+        order: 1;
+    } 
+    
+    #menu {
+        height:auto;
+        display: flex;
+        order: 2;
+        flex-direction: row-reverse;
+    }
+        
+    #menu ul {
+        display:none;
+        flex-direction: column;
+        margin:20px 0px;
+    }
+
+    #menu.visible ul {
+        display:flex;
+        align-items: end;
+    }
+
+    #menu button {
+        display:block;
+    }
+
+    #menu.visible button{
+        margin-top:15px;
+    }
+
+}
