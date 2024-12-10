@@ -1,0 +1,311 @@
+* {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+   font-family: sans-serif;
+   /* box-sizing: border-box; */
+}
+
+.center{
+   text-align: center;
+}
+
+.i-30{
+   width: 30px;
+}
+
+/* Container */
+
+.container{
+   margin-left: 10%;
+   margin-right: 10%;
+}
+.container2{
+   padding-top: 7%;
+   padding-bottom: 7%;
+}
+.container3{
+   padding-top: 5%;
+   padding-bottom: 5%;
+}
+
+/* Gap */
+.gap{
+   gap: 1%;
+}
+.gap2{
+   gap: 3%;
+}
+
+/* Flexbox */
+.flexbox-row{
+   display: flex;
+   flex-direction: row;
+}
+.flexbox-column{
+   display: flex;
+   flex-direction: column;
+}
+.flexbox-start{
+   display: flex;
+   justify-content: start;
+   align-items: start;
+}
+.flexbox-center{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.flexbox-end{
+   display: flex;
+   justify-content: end;
+   align-items: end;
+}
+.flexbox-space-b{
+   display: flex;
+   justify-content: space-around;
+}
+
+/* Width */
+
+.w-100{
+   width: 100%;
+}
+.w-50{
+   width: 50%;
+}
+.w-25{
+   width: 25%;
+}
+.w-10{
+   width: 10%;
+}
+
+/* Margin */
+
+.m-50{
+   margin-bottom: 50px;
+}
+.m-30{
+   margin-bottom: 30px;
+}
+.mtb-10{
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+.mt-30{
+   margin-top: 30px;
+}
+
+/* VARIABLES */
+
+:root{
+   --ff-arial :   font-family: Arial, Helvetica, sans-serif;
+   --c-blue:      rgb(0, 191, 255);
+   --c-black:     rgb(0, 0, 0);
+   --c-white:     rgb(255, 255, 255);
+   --c-white:     rgb(255, 255, 255);
+   --c- :         #828282;
+}
+
+/**** BODY ****/
+
+
+
+/* Section Accueil */
+
+/* #presentation{
+   margin-top: 7%;
+   margin-bottom: 6%;
+} */
+
+/* Section CV */
+
+#cv{
+   background-color: var(--c-blue);
+
+}
+
+.download:hover{
+   background-image: url(Img/icons/icons8-télécharger-50.png);
+   width: 30px;
+}
+
+.cv_border{
+   border: var(--c-blue) solid 1px;
+}
+
+/* Section Slider */
+
+.slide1{
+   background-image: url(Img/CV/CV\ -\ Alexia\ UTHAYAKUMARAN.png);
+   object-fit: cover;
+   /* w: 100%; */
+}
+
+/* Section Portfolio */
+
+#portfolio{
+   background-color: var(--c-black);
+   color: var(--c-white);
+}
+
+.card{
+   width: 25%;
+   text-align: center;
+   height: 100%;
+   color: var(--c-blue);
+}
+.card:hover{
+   padding: 0.1%;
+   background-color: var(--c-blue);
+   color: var(--c-white);
+   cursor: pointer;
+}
+.card:hover .text_on_img{
+   opacity: 1;
+}
+
+.img-size{
+   height: 200px;
+   object-fit: cover;
+   width: 100%;
+}
+
+.text_card{
+   margin: 10px;
+}
+
+.btn_voir{
+   text-decoration: none;
+}
+
+.text_on_img{
+   opacity: 0;
+   transition: 1s ease;
+   position: absolute;
+   bottom: 2%;
+   background: var(--c-black);
+   background: rgba(0, 0, 0, 0.4);
+   color: var(--c-blue);
+   width: 100%;
+   height: 99%;
+}
+
+.container_img {
+   position: relative;
+   max-width: 800px;
+}
+
+.btn_categ{
+   background-color: var(--c-blue);
+   border: none;
+   color: white;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   border: solid 2px var(--c-blue);
+   margin-bottom: 15px;
+}
+.btn_categ:hover{
+   background-color: var(--c-white);
+   color: var(--c-blue);
+}
+
+.btn_categ2{
+
+   background-color: var(--c-black);
+   color: var(--c-blue);
+   border: none;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   border: solid 2px var(--c-blue);
+   margin-bottom: 15px;
+   width: 50%;
+   height: 10vh;
+}
+.btn_categ2:hover{
+   background-color: var(--c-blue);
+   color: var(--c-white);
+}
+
+/* The popup */
+.form-popup {
+   display: none;
+   z-index: 9;
+   bottom: 0;
+   position:fixed;
+}
+
+.btn_cancel{
+   margin: 5px;
+   margin-bottom: 2vh;
+   height: 30px;
+   cursor: pointer;
+}
+
+.img_popup{
+   height: 90vh;
+}
+
+/* Section contact */
+
+#contact{
+   background-image: url(Img/logo/Fond_logo_FOND\ LOGO.png);
+   height: 500px;
+   width: 100%;
+   color: var(--c-blue);
+}
+
+#contact a{
+   color: var(--c-black);
+   font-weight: bold;
+}
+#contact a:hover{
+   color: var(--c-blue);
+}
+
+.contact{
+   width: 80%;
+   text-align: center;
+   background-color: var(--c-white);
+   display: flex;
+   flex-direction: column;
+}
+
+
+@media screen and (min-width:1000px) {
+
+   #contact_element{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+}
+
+@media screen and (max-width:1000px) {
+
+   .padding_element{
+      padding: 5%;
+   }
+
+}
+
+/* FOOTER */
+
+footer{
+   background-color: var(--c-black);
+   color: var(--c-white);
+   font-size: 13px;
+   text-align: center;
+   padding: 10px;
+}
+
+

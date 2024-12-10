@@ -1,0 +1,8 @@
+{
+    // EDITOR
+    
+    "editor.fontSize": 16,
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+    "liveServer.settings.donotShowInfoMsg": true,
+}
